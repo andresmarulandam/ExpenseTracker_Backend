@@ -3,9 +3,9 @@ const { v4: uuidv4 } = require("uuid");
 const cors = require("cors");
 
 const app = express();
-const port = proccess.env.PORT || 3000;
+const port = proccess.env.PORT || 3001;
 
-// http://localhost:3000/
+// http://localhost:3001/
 
 const expenses = [];
 
