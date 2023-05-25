@@ -1,22 +1,24 @@
 const express = require("express");
 const { v4: uuidv4 } = require("uuid");
+const cors = require("cors");
 
 const app = express();
-const port = 3001;
+const port = proccess.env.PORT || 3000;
 
-// http://localhost:3001/
+// http://localhost:3000/
 
 const expenses = [];
 
 /*  ENDPOINTS
  
- * POST    /songs      CREATE
- * GET     /songs      READ (ALL)
- * GET     /songs/:id  READ (ONE)
- * PUT     /songs/:id  UPDATE
- * DELETE  /songs/:id  DELETE
+ * POST    /expenses      CREATE
+ * GET     /expenses      READ (ALL)
+ * GET     /expenses/:id  READ (ONE)
+ * PUT     /expenses/:id  UPDATE
+ * DELETE  /expenses/:id  DELETE
  */
 
+app.use(cors());
 app.use(express.json());
 
 // CREATE
