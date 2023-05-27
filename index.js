@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require("uuid");
 const cors = require("cors");
 
 const app = express();
-const port = proccess.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 // http://localhost:3001/
 
