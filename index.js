@@ -57,7 +57,7 @@ app.get("/expenses/:id", (req, res, next) => {
   } else {
     next({
       statusCode: 404,
-      message: `Song with ${id}, Not Found`,
+      message: `Expense with ${id}, Not Found`,
     });
   }
 });
@@ -84,7 +84,7 @@ app.put("/expenses/:id", (req, res, next) => {
   } else {
     next({
       statusCode: 404,
-      message: `Song with ${id}, Not Found`,
+      message: `Expense with ${id}, Not Found`,
     });
   }
 });
@@ -105,7 +105,7 @@ app.delete("/expenses/:id", (req, res, next) => {
   } else {
     next({
       statusCode: 404,
-      message: `Song with ${id}, Not Found`,
+      message: `Expense with ${id}, Not Found`,
     });
   }
 });
